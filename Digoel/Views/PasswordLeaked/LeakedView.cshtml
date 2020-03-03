@@ -1,0 +1,19 @@
+﻿@model Digoel.Models.PasswordLeaked
+@{
+    ViewBag.Title = "LeakedView";
+}
+
+<h2>Check to see if your password has been leaked</h2>
+
+<div>
+    <h4>Using a large repository of leaked passwords, check to see if your password has been leaked.</h4>
+    <hr />
+    <dl class="dl-horizontal"></dl>
+</div>
+
+@using (Html.BeginForm("Check", "PasswordLeaked", FormMethod.Post))
+{
+    <input type="text" name="Password" id="PW" />
+
+    <input type="submit" value="Check" />
+}

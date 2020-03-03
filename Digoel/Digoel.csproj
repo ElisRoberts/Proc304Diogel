@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HaveIBeenPwned.Password, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Wndrr.HaveIBeenPwned.Password.1.1.0\lib\netstandard2.0\HaveIBeenPwned.Password.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -175,6 +178,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003031317193_InitialModel.cs" />
+    <Compile Include="Migrations\202003031317193_InitialModel.Designer.cs">
+      <DependentUpon>202003031317193_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031431476_ApplyAnnotationsToPasswordStorage.cs" />
+    <Compile Include="Migrations\202003031431476_ApplyAnnotationsToPasswordStorage.Designer.cs">
+      <DependentUpon>202003031431476_ApplyAnnotationsToPasswordStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031436276_ApplyAnnotationsToPasswordStorage1.cs" />
+    <Compile Include="Migrations\202003031436276_ApplyAnnotationsToPasswordStorage1.Designer.cs">
+      <DependentUpon>202003031436276_ApplyAnnotationsToPasswordStorage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031439124_ApplyAnnotationsToPasswordStorage2.cs" />
+    <Compile Include="Migrations\202003031439124_ApplyAnnotationsToPasswordStorage2.Designer.cs">
+      <DependentUpon>202003031439124_ApplyAnnotationsToPasswordStorage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031440372_ApplyAnnotationsToPasswordStorageTest.cs" />
+    <Compile Include="Migrations\202003031440372_ApplyAnnotationsToPasswordStorageTest.Designer.cs">
+      <DependentUpon>202003031440372_ApplyAnnotationsToPasswordStorageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -240,11 +264,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PasswordLeaked\LeakedView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\PasswordGen\" />
-    <Folder Include="Views\PasswordLeaked\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -258,6 +282,23 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202003031317193_InitialModel.resx">
+      <DependentUpon>202003031317193_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031431476_ApplyAnnotationsToPasswordStorage.resx">
+      <DependentUpon>202003031431476_ApplyAnnotationsToPasswordStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031436276_ApplyAnnotationsToPasswordStorage1.resx">
+      <DependentUpon>202003031436276_ApplyAnnotationsToPasswordStorage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031439124_ApplyAnnotationsToPasswordStorage2.resx">
+      <DependentUpon>202003031439124_ApplyAnnotationsToPasswordStorage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031440372_ApplyAnnotationsToPasswordStorageTest.resx">
+      <DependentUpon>202003031440372_ApplyAnnotationsToPasswordStorageTest.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
