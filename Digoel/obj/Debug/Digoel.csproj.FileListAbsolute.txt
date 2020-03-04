@@ -316,3 +316,4 @@ D:\Proc304\Digoel\bin\System.Xml.XmlSerializer.dll
 D:\Proc304\Digoel\bin\System.Xml.XPath.dll
 D:\Proc304\Digoel\bin\System.Xml.XPath.XDocument.dll
 D:\Proc304\Digoel\bin\HaveIBeenPwned.Password.dll
+D:\Proc304\Digoel\bin\Recaptcha.Web.dll

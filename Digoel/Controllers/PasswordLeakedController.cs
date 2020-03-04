@@ -15,8 +15,8 @@ namespace Digoel.Controllers
             return View();
         }
 
-        // POST: PasswordLeaked
-        [HttpPost]
+       // POST: PasswordLeaked
+       [HttpPost]
         public ActionResult Check(string Password)
         {
             var pwned = new HaveIBeenPwned.Password.HaveIBeenPwned();
@@ -31,7 +31,7 @@ namespace Digoel.Controllers
                 Response.Write("<script> alert ('This password has NOT been leaked');</script>");
             }
             return View("LeakedView");
-              
+
         }
     }
 }
