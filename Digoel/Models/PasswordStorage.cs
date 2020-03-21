@@ -19,12 +19,14 @@ namespace Digoel.Models
         [Required]
         [StringLength(255)]
         [Display(Name = "Password")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required]
+ 
         [Display(Name = "Date Added / Edited")]
         public DateTime DateSaved { get; set; }
 
-
+        [StringLength(128)]
+        public string UserId { set; get; } 
     }
 }

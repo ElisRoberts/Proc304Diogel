@@ -11,7 +11,8 @@
     <dl class="dl-horizontal"></dl>
 </div>
 
-@using (Html.BeginForm("Check", "PasswordLeaked", FormMethod.Post))
+@using (Html.BeginForm("Check", "PasswordLeaked", FormMethod.Post)) //Calls the controller
+                                                                    //TO DO: Make a string change contents rather than use a error box
 {
     <input type="text" name="Password" id="PW" />
 

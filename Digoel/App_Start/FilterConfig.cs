@@ -8,8 +8,8 @@ namespace Digoel
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
-            filters.Add(new MyLogginFilterAttribute()); //Route for Recaptcha
+            filters.Add(new HandleErrorAttribute());    //Default filter
+            filters.Add(new MyLogginFilterAttribute()); //Filter for Recaptcha
         }
     }
 }

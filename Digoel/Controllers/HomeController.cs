@@ -28,6 +28,8 @@ namespace Digoel.Controllers
 
             return View();
         }
+
+        //ReCaptcha error and action handling 
         public ActionResult CaptchaRoute(string secret, string format)
         {
 

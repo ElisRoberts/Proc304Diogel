@@ -6,6 +6,7 @@ using System.Security.Cryptography; //Using inbuilt crypto
 
 namespace Digoel.Models
 {
+    //This model generated the hash thats going to be used in password storage
     public class ShaHashGet
     {
         public static string GetHash(string input)

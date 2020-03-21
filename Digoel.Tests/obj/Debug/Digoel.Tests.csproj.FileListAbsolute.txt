@@ -1,0 +1,106 @@
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.Tests.dll.config
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.Tests.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.Tests.pdb
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Newtonsoft.Json.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Helpers.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Mvc.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Razor.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Optimization.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Owin.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\EntityFramework.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\HaveIBeenPwned.Password.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\netstandard.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.pdb
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.dll.config
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Newtonsoft.Json.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Helpers.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Mvc.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Razor.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Optimization.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\EntityFramework.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.csprojAssemblyReference.cache
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.csproj.CopyComplete
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.dll
+I:\1. FREELANCING\3. FIVER\27. metelstairs\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.pdb
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.Tests.dll.config
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.Tests.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.Tests.pdb
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Owin.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\EntityFramework.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\HaveIBeenPwned.Password.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\netstandard.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.pdb
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Digoel.dll.config
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\EntityFramework.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.csprojAssemblyReference.cache
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.csproj.CopyComplete
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.dll
+C:\Users\ELISW\Desktop\updated project\Proj_21_03_2020_second_order\Proj\Proc304\Digoel.Tests\obj\Debug\Digoel.Tests.pdb

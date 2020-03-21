@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 
 namespace Digoel.Models
 {
+    //Handles captcha response depending on if the captcha is valid or not 
     public class CaptchaResponse
     {
         [JsonProperty("success")]

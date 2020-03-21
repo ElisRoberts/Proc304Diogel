@@ -459,14 +459,15 @@ namespace Digoel.Controllers
         public static CaptchaResponse ValidateCaptcha(string response)
         {
 
-            string secret = System.Web.Configuration.WebConfigurationManager.AppSettings["recaptchaPrivateKey"];
+          
+             string secret = "6LckuN4UAAAAAH07h8ZlHL3UwB1cKC658OuW-spp";
             var client = new WebClient();
-            var jsonResult = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secret, response));
-            //var jsonResult = client.Dow
+            var jsonResult = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secret, response)); //Compares secret key with site key
+            
 
             return JsonConvert.DeserializeObject<CaptchaResponse>(jsonResult.ToString());
         }
-        //REFERENCE DETLETE AFTER!!: https://github.com/tanveery/recaptcha-net
+    
 
 
 

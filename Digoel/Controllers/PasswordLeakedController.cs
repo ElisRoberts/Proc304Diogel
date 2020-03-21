@@ -7,6 +7,7 @@ using HaveIBeenPwned.Password;
 
 namespace Digoel.Controllers
 {
+
     public class PasswordLeakedController : Controller
     {
         // GET: PasswordLeaked
@@ -19,7 +20,7 @@ namespace Digoel.Controllers
        [HttpPost]
         public ActionResult Check(string Password)
         {
-            var pwned = new HaveIBeenPwned.Password.HaveIBeenPwned();
+            var pwned = new HaveIBeenPwned.Password.HaveIBeenPwned();   //Searched database
             bool isPasswordLeaked = pwned.IsPasswordPwned(Password);
 
             if (isPasswordLeaked == true)

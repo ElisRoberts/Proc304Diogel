@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Digoel.Models
 {
+    //This model applies the Hash that was generated in in the 'ShaHashGet' model
     public class ShaHashApply : IPasswordHasher
     {
         public string HashPassword(string password)
