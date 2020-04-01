@@ -11,5 +11,6 @@ namespace Digoel.Models
         [Required]
         [Display(Name = "Generate Password")]
         public string genPassword { get; set; }
+        public int length { get; set; }
     }
 }

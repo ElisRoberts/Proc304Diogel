@@ -173,12 +173,19 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Common\CustonizePasswordGenerator.cs" />
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="Common\Generate.cs" />
+    <Compile Include="Common\PureRandom.cs" />
+    <Compile Include="Common\RandomHelper.cs" />
+    <Compile Include="Common\Source.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PasswordGenController.cs" />
     <Compile Include="Controllers\PasswordLeakedController.cs" />
     <Compile Include="Controllers\PasswordStorageController.cs" />
+    <Compile Include="Controllers\StrengthCheckController.cs" />
     <Compile Include="Encryption\AdvancedEncryptionStandard.cs" />
     <Compile Include="Filters\MyLogginFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -240,8 +247,7 @@
     <Compile Include="Models\PasswordGen.cs" />
     <Compile Include="Models\PasswordLeaked.cs" />
     <Compile Include="Models\PasswordStorage.cs" />
-    <Compile Include="Models\ShaHashApply.cs" />
-    <Compile Include="Models\ShaHashGet.cs" />
+    <Compile Include="Models\StrengthCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -308,10 +314,12 @@
     <Content Include="Views\PasswordStorage\Details.cshtml" />
     <Content Include="Views\PasswordStorage\Edit.cshtml" />
     <Content Include="Views\PasswordStorage\Index.cshtml" />
+    <Content Include="Views\PasswordGen\Index.cshtml" />
+    <Content Include="Views\StrengthCheck\Index.cshtml" />
+    <Content Include="Views\PasswordGen\CustomizePasswordGenerate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\PasswordGen\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

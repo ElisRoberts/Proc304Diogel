@@ -67,9 +67,32 @@ namespace Digoel.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            string generated_password = string.Empty;
+
+            if (Session["generated_password"] != null)
+            {
+                generated_password = Session["generated_password"].ToString();
+            }
+
+            if (string.IsNullOrEmpty(generated_password))
+            {
+                return View();
+            }
+            else
+            {
+                Session["generated_password"] = generated_password;
+                return View();
+            }
+
         }
 
+
+        [HttpPost]
+        public ActionResult GivenPassword(string generated_password)
+        {
+            Session["generated_password"] = generated_password;
+            return RedirectToAction("Create");
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
