@@ -45,6 +45,9 @@ namespace Digoel.Controllers
         }
 
 
+    
+
+
         [HttpGet]
         public ActionResult Details(int? id)
         {
@@ -121,13 +124,27 @@ namespace Digoel.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PasswordStorage passwordStorage = db.GetPasswordStorage.Find(id);
-            passwordStorage.Password = AdvancedEncryptionStandard.DecryptText(passwordStorage.Password);
-            if (passwordStorage == null)
-            {
-                return HttpNotFound();
+            if(Session["result_password"] == null){
+                PasswordStorage passwordStorage = db.GetPasswordStorage.Find(id);
+                passwordStorage.Password = AdvancedEncryptionStandard.DecryptText(passwordStorage.Password);
+                if (passwordStorage == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(passwordStorage);
             }
-            return View(passwordStorage);
+            else
+            {
+
+                PasswordStorage passwordStorage = db.GetPasswordStorage.Find(id);
+                passwordStorage.Password = Session["result_password"].ToString();
+                if (passwordStorage == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(passwordStorage);
+            }
+           
         }
 
 

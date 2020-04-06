@@ -173,7 +173,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Common\CustonizePasswordGenerator.cs" />
+    <Compile Include="Common\CustomizePasswordGenerator.cs" />
     <Compile Include="Common\Extensions.cs" />
     <Compile Include="Common\Generate.cs" />
     <Compile Include="Common\PureRandom.cs" />

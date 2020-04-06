@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace Digoel.Controllers
 {
+ 
     [Authorize]
     public class PasswordGenController : Controller
     {
@@ -67,7 +68,7 @@ namespace Digoel.Controllers
             bool include_uppercase = Convert.ToBoolean(is_checked_include_uppercase);
             bool include_lowercase = Convert.ToBoolean(is_checked_include_lowercase);
 
-           var generated_password =  CustonizePasswordGenerator.GeneratePassword(include_lowercase, include_uppercase, include_number, include_symbol, false, Convert.ToInt32(length));
+           var generated_password =  CustomizePasswordGenerator.GeneratePassword(include_lowercase, include_uppercase, include_number, include_symbol, false, Convert.ToInt32(length));
 
             return Json(new { generated_password = generated_password }, JsonRequestBehavior.AllowGet);
         }

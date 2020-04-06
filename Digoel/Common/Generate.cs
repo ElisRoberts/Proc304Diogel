@@ -14,7 +14,7 @@ namespace Digoel.Common
 
         public static string Words(int wordCountMin, int wordCountMax, bool uppercaseFirstLetter = true, bool includePunctuation = false)
         {
-            var source = string.Join(" ", Source.WordList(includePunctuation).Take(RandomHelper.Instance.Next(wordCountMin, wordCountMax)));
+            var source = string.Join("", Source.WordList(includePunctuation).Take(RandomHelper.Instance.Next(wordCountMin, wordCountMax)));
 
             if (uppercaseFirstLetter)
             {

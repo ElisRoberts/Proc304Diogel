@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Digoel.Common
 {
-    public static class CustonizePasswordGenerator
+    public static class CustomizePasswordGenerator
     {
         public static string GeneratePassword(bool includeLowercase, bool includeUppercase, bool includeNumeric, bool includeSpecial, bool includeSpaces, int lengthOfPassword)
         {

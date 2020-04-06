@@ -43,7 +43,7 @@
                                         else
                                         {
                                             <input type="password" name="Password" value="@Session["generated_password"] " id="Password" class="Password"/>
-                                            @*@Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" }, @Value = "aa" })*@
+                                           
                                         }
                                    
                                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
