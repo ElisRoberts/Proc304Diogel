@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Choose a password template from the list below or customise your own requirements</h3><br />
+
+            <div class="form-group">
+                <span style="font-weight:bold"> Pure Random:</span>  Randomly selects numbers, characters and special characters to create a unique password.
+                Minimum 8 chracters, Includes min of 1 capital, 1 number and 1 special character.
+            </div>
+
+            <div class="form-group">
+                <span style="font-weight:bold"> Think Random:</span>  Randomly chooses three words and puts them together to make a unique and easy to remember password. 
+            </div>
+
+            <div class="form-group">
+                <span style="font-weight:bold"> Numbers:  </span>  Randomly chooses a series of numbers to create a password.
+            </div>
+
+            <br /><br />
+
+            <div class="form-group">
+                <span id="length_message" class="label label-danger"> </span><br />
+
+                <label for="type" class="col-sm-2 control-label">Password Type</label>
+
+                @Html.DropDownList("password_type", new List<SelectListItem>
+                {   new SelectListItem {Text = "Select Password Type", Value = "0", Selected = true},
+                    new SelectListItem {Text = "Think Random", Value = "1"},
+                    new SelectListItem {Text = "Pure Random", Value = "2"},
+                    new SelectListItem {Text = "Numbers", Value = "3"},
+                    }, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group length_div">
+                <label for="type" class="col-sm-2 control-label">Length</label>
+                @Html.TextBox("Length", null, new { @class = "form-control", @type = "number" })
+            </div>
+
+            <div class="form-group">
+                <input type="button" value="Generate" id="btn_generate" class="btn btn-primary btn-sm" />
+            </div>
+
+            <div class="form-group">
+                <label for="type" class="col-sm-2 control-label">Generated Password</label>
+                @Html.TextBox("generated_password", null, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <input type="button" value="Save" id="btn_save" class="btn btn-info btn-sm" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="type" class="col-sm-4 control-label">If you want to create customize password, Please click below button:</label>
+                <a href="/PasswordGen/CustomizePasswordGenerate">
+                    <input type="button" value="Click here"  class="btn btn-primary btn-sm"/>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#length_message").hide();
+
+            $("#password_type").on("change", function () {
+                $("#generated_password").val("");
+                $("#Length").val("");
+                if ($("#password_type option:selected").val() == 1) {
+                    $("#Length").val("");
+                    $(".length_div").hide();
+                }
+                else {
+                    $(".length_div").show();
+                }
+            });
+
+
+            $("#btn_generate").on('click', function () {
+                debugger;
+                var selected_type = $("#password_type option:selected").val();
+                var selected_length = $("#Length").val();
+
+                if (selected_type == 0) {
+                    alert("Please select any password type");
+                    return false;
+                }
+
+
+                if (selected_type == 2 || selected_type == 3) {
+                    if (selected_length == "" || selected_length == null || selected_length <= -1) {
+                        alert("Please define the length of your password");
+                        return false;
+                    }
+                }
+
+                var data = JSON.stringify({ selected_type: selected_type, selected_length: selected_length });
+                debugger;
+                $.ajax({
+                    type: "POST",
+                    url: "/PasswordGen/Index",
+                    contentType: "application/json; charset=utf-8",
+                    datatType: "json",
+                    data: data,
+                    success: function (data) {
+                        if (data.length_message != null) {
+                            $("#length_message").html(data.length_message);
+                            $("#length_message").show();
+                        } else {
+                            $("#length_message").hide();
+                        }
+
+                        $("#generated_password").val(data.generated_password);
+                    },
+                    error: function (ex) {
+                        console.log(ex.error);
+                    },
+                    async: false
+                });
+            });
+
+
+
+            $("#btn_save").on('click', function () {
+                debugger;
+                var generated_password = $("#generated_password").val();
+
+                if (generated_password == "" || generated_password == null) {
+                    alert("You have to generate the password first");
+                }
+                else {
+                      var data = JSON.stringify({ generated_password: generated_password });
+                debugger;
+                $.ajax({
+                    type: "POST",
+                    url: "/PasswordStorage/GivenPassword",
+                    contentType: "application/json; charset=utf-8",
+                    datatType: "json",
+                    data: data,
+                    success: function (data) {
+                         $("#generated_password").val(data.generated_password);
+                          var url= '@Url.Action("Create","PasswordStorage")';
+                          window.open(url, "_blank");
+                    },
+                    error: function (ex) {
+                        console.log(ex.error);
+                    },
+                    async: false
+                });
+                }
+
+            })
+
+        });
+
+
+    </script>
+}

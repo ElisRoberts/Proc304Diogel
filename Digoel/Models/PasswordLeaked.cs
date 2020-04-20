@@ -7,5 +7,12 @@ namespace Digoel.Models
 {
     public class PasswordLeaked
     {
+<<<<<<< Updated upstream
+=======
+        [Required]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+        
+>>>>>>> Stashed changes
     }
 }
