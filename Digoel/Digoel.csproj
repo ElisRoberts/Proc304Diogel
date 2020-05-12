@@ -178,13 +178,10 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PasswordGenController.cs" />
     <Compile Include="Controllers\PasswordLeakedController.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="Controllers\PasswordStorageController.cs" />
     <Compile Include="Controllers\StrengthCheckController.cs" />
     <Compile Include="Encryption\AdvancedEncryptionStandard.cs" />
     <Compile Include="Filters\MyLogginFilterAttribute.cs" />
->>>>>>> Stashed changes
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -194,10 +191,7 @@
     <Compile Include="Models\PasswordGen.cs" />
     <Compile Include="Models\PasswordLeaked.cs" />
     <Compile Include="Models\PasswordStorage.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="Models\StrengthCheck.cs" />
->>>>>>> Stashed changes
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -259,13 +253,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-<<<<<<< Updated upstream
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\PasswordGen\" />
     <Folder Include="Views\PasswordLeaked\" />
-=======
     <Content Include="Views\PasswordLeaked\LeakedView.cshtml" />
     <Content Include="Views\PasswordStorage\Create.cshtml" />
     <Content Include="Views\PasswordStorage\Delete.cshtml" />
@@ -278,7 +270,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
