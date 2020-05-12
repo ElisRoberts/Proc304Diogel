@@ -38,6 +38,10 @@ namespace Digoel
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)
         {
+<<<<<<< Updated upstream
+=======
+     
+>>>>>>> Stashed changes
         }
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
