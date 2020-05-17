@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 
 namespace Digoel.Common
-{
+{//This class will generate a pureRandom password
     public static  class PureRandom
     {
         static string Lower = "abcdefghijklmnopqrstuvwxyz";

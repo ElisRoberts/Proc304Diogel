@@ -13,11 +13,19 @@ namespace Digoel
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //Default route
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
             );
+
+            //Route used for captcha
+            routes.MapRoute(
+                name: "CaptchaRoute",
+                url: "CaptchaRoute/{secret}/{format}",
+                defaults: new { controller = "Home", action = "CaptchaRoute", format = UrlParameter.Optional }
+             );
         }
     }
 }

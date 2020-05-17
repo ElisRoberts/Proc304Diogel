@@ -6,7 +6,7 @@ using System.Web;
 namespace Digoel.Common
 {
     public static class CustomizePasswordGenerator
-    {
+    {//Users customise password genreation by deciding whats to be included
         public static string GeneratePassword(bool includeLowercase, bool includeUppercase, bool includeNumeric, bool includeSpecial, bool includeSpaces, int lengthOfPassword)
         {
             const int MAXIMUM_IDENTICAL_CONSECUTIVE_CHARS = 2;

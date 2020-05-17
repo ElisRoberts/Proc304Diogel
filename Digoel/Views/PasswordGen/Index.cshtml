@@ -102,9 +102,8 @@
                     return false;
                 }
 
-
                 if (selected_type == 2 || selected_type == 3) {
-                    if (selected_length == "" || selected_length == null || selected_length <= -1) {
+                    if (selected_length == "" || selected_length == null) {
                         alert("Please define the length of your password");
                         return false;
                     }

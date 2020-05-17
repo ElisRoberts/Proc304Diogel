@@ -1,5 +1,4 @@
-﻿@model Digoel.Models.StrengthCheck
-    @using HaveIBeenPwned.Password;
+﻿
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,7 +8,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="form-group">
-                <h3>Password Strength Check</h3>
+                <h3>  Password Strength Check</h3>
             </div>
             <br /><br />
 
@@ -18,96 +17,97 @@
                           <label for="type" class="control-label">Password</label>
                       </div>
                       <div class="col-sm-3">
-                          @*using (Html.BeginForm("Strength Check", "password_strength", FormMethod.Post)) //Calls the controller
-                                                                            //TO DO: Make a string change contents rather than use a error box
-        {
-            <input type="text" name="Password" id="PW" />
-
-            <input type="submit" value="Check" />*@
-                          @*using (Html.BeginForm("Check", "StrengthCheck"))*@
-
-                          <div class="btn-group">
-                              @*Html.TextBox("password_strength", @Session["result_password"], null, new { @class = "form-control input-sm" })*@
-                              @*@Session["result_password"]*@
-
-                              @using (Html.BeginForm("Check", "StrengthCheck", FormMethod.Post))
-                              {
-                                  <input class="form-control input-sm" id="password_strength" name="password_strength" type="text" value="@Session["result_password"]" />
-                                  <input type="submit" value="Leaked Check" class="btn btn-primary btn-sm" />
-                                  <p>
-                                      @ViewBag.Return
-
-                                  </p>
-
-
-                              }
-
-
-
-
-
-
-
-                              <input type="button" value="Strength Check" id="btn_strength_check" class="btn btn-primary btn-sm" />
-
-
-
-
-                              @if (Session["result_password"] == null)
-                              {
-                                  <div class="col-sm-4">
-                                      <input type="button" value="Save" id="btn_save" class="btn btn-info btn-sm" />
-                                  </div>
-                              }
-                              else
-                              {
-                                  <div class="col-sm-1">
-
-                                      @Html.ActionLink("Update", "Edit", "PasswordStorage", new { id = @Session["Id"] }, new { @class = "btn btn-warning btn-sm" })
-                                  </div>
-                              }
-                          </div>
-
+                          @Html.TextBox("password_strength", @Session["result_password"], null, new { @class = "form-control input-sm" })
                       </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>
-                                <h4 class="capital_letter"> <span class="label label-success">+1 For use of capital letters</span></h4>
-                                <h4 class="small_letter"> <span class="label label-success">+1 For use of small letters</span></h4>
-                                <h4 class="number"> <span class="label label-success">+1 For use of numbers</span></h4>
-                                <h4 class="special_character"> <span class="label label-success">+1 For use of special chars</span></h4>
-                                
-                                <h4 class="ten_plus_length"> <span class="label label-success">+1 For 10+ length</span></h4>
-                                <h4 class="fourteen_plus_length"> <span class="label label-success">+2 For 14+ lengths</span></h4>
-                                <h4 class="eighteen_plus_length"> <span class="label label-success">+3 for 18+ length</span></h4>
-                                <h4 class="twenty_two_plus_length"> <span class="label label-success">+4 for 22+ length</span></h4>
-                            </p>
-                            <hr />
-                            <p>
-                                <h4 class="six_plus_length"> <span class="label label-danger">-1 For 6 length</span></h4>
-                                <h4 class="repetition"> <span class="label label-danger">-1 for repetition e.g. 111111</span></h4>
-                                <h4 class="under_six_length"> <span class="label label-danger">-4 for length under 6</span></h4>
-                                <h4 class="no_numbers"> <span class="label label-danger"> -1 No Numbers</span></h4>
-                            </p>
+                      <div class="col-sm-2">
+                          <input type="button" value="Strength Check" id="btn_strength_check" class="btn btn-primary btn-sm" />
+                      </div>
+                      <div class="col-sm-2">
+                          @using (Html.BeginForm("Check", "StrengthCheck", FormMethod.Post)) 
 
-                            <hr />
-                            <h3> Strength: <span class="label strength_result">  </span></h3>
-                        </div>
-                    </div>
+                          {
+                             
+
+                              <input type="submit" value="leakCheck" /> 
+                          }
+                          </div>
+                          
+                      @if (Session["result_password"] == null)
+                      {
+                          <div class="col-sm-1">
+                              <input type="button" value="Save" id="btn_save" class="btn btn-info btn-sm" />
+                          </div>
+                      }
+                      else
+                      {
+                  <div class="col-sm-1">
+                    
+                      @Html.ActionLink("Update", "Edit", "PasswordStorage", new { id = @Session["Id"] }, new { @class = "btn btn-warning btn-sm" })
+                  </div>
+                      }
 
 
+                  </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        <h4 class="capital_letter"> <span class="label label-success">+1 For use of capital letters</span></h4>
+                        <h4 class="small_letter"> <span class="label label-success">+1 For use of small letters</span></h4>
+                        <h4 class="number"> <span class="label label-success">+1 For use of numbers</span></h4>
+                        <h4 class="special_character"> <span class="label label-success">+1 For use of special chars</span></h4>                     
+                        <h4 class="ten_plus_length"> <span class="label label-success">+1 For 10+ length</span></h4>
+                        <h4 class="fourteen_plus_length"> <span class="label label-success">+2 For 14+ lengths</span></h4>
+                        <h4 class="eighteen_plus_length"> <span class="label label-success">+3 for 18+ length</span></h4>
+                        <h4 class="twenty_two_plus_length"> <span class="label label-success">+4 for 22+ length</span></h4>
+                    </p>
+                    <hr />
+                    <p>
+                        <h4 class="six_plus_length"> <span class="label label-danger">-3 For 6  and 6+ length</span></h4>
+                        <h4 class="under_six_length"> <span class="label label-danger">-4 for length under 6</span></h4>
+                        <h4 class="no_numbers"> <span class="label label-danger"> -1 No Numbers</span></h4>
+                    </p>
+
+                    <hr />
+                    <h3> Strength: <span class="label strength_result">  </span></h3>
                 </div>
             </div>
+
+
         </div>
     </div>
+</div>
 
-        @section scripts{
-            <script src="~/Scripts/jquery-3.4.1.min.js"></script>
 
-            <script>
+@section scripts{
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
 
-                $(document).ready(function () {
-                    var current_user_loggedin_password = '@Session["Password"]';
+    <script>
+
+        $(document).ready(function () {
+            var current_user_loggedin_password = '@Session["Password"]';
+            var background_color = "";
+            $('.strength_result').removeClass(background_color);
+
+            $('.capital_letter').hide();
+            $('.small_letter').hide();
+            $('.number').hide();
+
+            $('.special_character').hide();
+            $('.six_plus_length').hide();
+            $('.ten_plus_length').hide();
+            $('.fourteen_plus_length').hide();
+            $('.eighteen_plus_length').hide();
+            $('.twenty_two_plus_length').hide();
+
+            $('.sequencing').hide();
+            $('.repetition').hide();
+            $('.under_six_length').hide();
+             $('.no_numbers').hide();
+            $('.specific_words').hide();
+
+
+            $("#btn_strength_check").on('click', function () {
+                    var strength = "";
                     var background_color = "";
                     $('.strength_result').removeClass(background_color);
 
@@ -121,249 +121,225 @@
                     $('.fourteen_plus_length').hide();
                     $('.eighteen_plus_length').hide();
                     $('.twenty_two_plus_length').hide();
+
+                    $('.sequencing').hide();
                     $('.repetition').hide();
-                    $('.under_six_length').hide();
+                $('.under_six_length').hide();
                      $('.no_numbers').hide();
+                    $('.specific_words').hide();
+
+                debugger;
+                var MAXIMUM_IDENTICAL_CONSECUTIVE_CHARS = 2;
+                var LOWERCASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
+                var UPPERCASE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                var NUMERIC_CHARACTERS = "0123456789";
+                var SPECIAL_CHARACTERS = "<>@@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=";
+                var password_strength = $("#password_strength").val();
+                var password_score = 0;
 
 
-                    $("#btn_strength_check").on('click', function () {
-                            var strength = "";
-                            var background_color = "";
-                            $('.strength_result').removeClass(background_color);
+                debugger;
 
-                            $('.capital_letter').hide();
-                            $('.small_letter').hide();
-                            $('.number').hide();
+                   if (/[A-Z]/.test(password_strength)) {
+                    password_score += 1;
+                    $('.capital_letter').show();
+                }
+                else {
+                    $('.capital_letter').hide();
+                }
 
-                            $('.special_character').hide();
+
+
+                if (/[a-z]/.test(password_strength)) {
+                    password_score += 1;
+                    $('.small_letter').show();
+                }
+                else {
+                    $('.small_letter').hide();
+                }
+
+
+                if (/^[a-zA-Z0-9- ]*$/.test(password_strength) == false) {
+                    password_score += 1;
+                    $('.special_character').show();
+                }
+                else {
+                     $('.special_character').hide();
+                }
+
+
+                      if (/[0-9]/.test(password_strength)) {
+                    password_score += 1;
+                    $('.number').show();
+                }
+                else {
+                    $('.number').hide();
+                }
+
+
+
+
+
+
+
+                debugger;
+                var len = password_strength.length;
+                switch (true) {
+
+                    case len > 22:
+                            password_score += 4;
+                            $('.twenty_two_plus_length').show();
                             $('.six_plus_length').hide();
                             $('.ten_plus_length').hide();
                             $('.fourteen_plus_length').hide();
                             $('.eighteen_plus_length').hide();
+                            $('.under_six_length').hide();
+                            break;
+
+                    case len > 18:
+                            password_score += 3;
                             $('.twenty_two_plus_length').hide();
-
-
-                            $('.repetition').hide();
-                        $('.under_six_length').hide();
-                             $('.no_numbers').hide();
-
-
-                        debugger;
-                        var MAXIMUM_IDENTICAL_CONSECUTIVE_CHARS = 2;
-                        var LOWERCASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
-                        var UPPERCASE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                        var NUMERIC_CHARACTERS = "0123456789";
-                        var SPECIAL_CHARACTERS = "<>@@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=";
-                        var password_strength = $("#password_strength").val();
-                        var password_score = 0;
-
-
-                        debugger;
-
-                           if (/[A-Z]/.test(password_strength)) {
+                            $('.six_plus_length').hide();
+                            $('.ten_plus_length').hide();
+                            $('.fourteen_plus_length').hide();
+                            $('.eighteen_plus_length').show();
+                            $('.under_six_length').hide();
+                            break;
+                    case len > 14:
+                            password_score += 2;
+                            $('.twenty_two_plus_length').hide();
+                            $('.six_plus_length').hide();
+                            $('.ten_plus_length').hide();
+                            $('.fourteen_plus_length').hide();
+                            $('.eighteen_plus_length').show();
+                            $('.under_six_length').hide();
+                            break;
+                    case len > 10:
                             password_score += 1;
-                            $('.capital_letter').show();
-                        }
-                        else {
-                            $('.capital_letter').hide();
-                        }
+                            $('.twenty_two_plus_length').hide();
+                            $('.six_plus_length').hide();
+                            $('.ten_plus_length').show();
+                            $('.fourteen_plus_length').hide();
+                            $('.eighteen_plus_length').hide();
+                            $('.under_six_length').hide();
+                            break;
+                    case len >= 6:
+                            password_score += -3;
+                            $('.twenty_two_plus_length').hide();
+                            $('.six_plus_length').show();
+                            $('.ten_plus_length').hide();
+                            $('.fourteen_plus_length').hide();
+                            $('.eighteen_plus_length').hide();
+                            $('.under_six_length').hide();
+                            break;
+                    case len < 6:
+                            password_score += -4;
+                            $('.twenty_two_plus_length').hide();
+                            $('.six_plus_length').hide();
+                            $('.ten_plus_length').hide();
+                            $('.fourteen_plus_length').hide();
+                            $('.eighteen_plus_length').hide();
+                            $('.under_six_length').show();
+                            break;
+                    default:
+                         alert( "I don't know such values" );
+                }
+
+         
+                   debugger;
+                switch (true) {
+                    case password_score >= 7:
+                            strength = "Strong";
+                            background_color = "label-success";
+                            break;
+
+                    case password_score >= 4 && password_score <= 6:
+                            strength = "Moderate";
+                            background_color = "label-info";
+                            break;
+
+                    case password_score >= 1 && password_score <= 3:
+                              strength = "Weak";
+                              background_color = "label-warning";
+                            break;
+                    default:
+                           strength = "Very Unsecure";
+                           background_color = "label-danger";
+                }
 
 
-
-                        if (/[a-z]/.test(password_strength)) {
-                            password_score += 1;
-                            $('.small_letter').show();
-                        }
-                        else {
-                            $('.small_letter').hide();
-                        }
-
-
-                        if (/^[a-zA-Z0-9- ]*$/.test(password_strength) == false) {
-                            password_score += 1;
-                            $('.special_character').show();
-                        }
-                        else {
-                             $('.special_character').hide();
-                        }
-
-
-                              if (/[0-9]/.test(password_strength)) {
-                            password_score += 1;
-                            $('.number').show();
-                        }
-                        else {
-                            $('.number').hide();
-                        }
-
-
-
-
-
-
-
-                        debugger;
-                        var len = password_strength.length;
-                        switch (true) {
-
-                            case len > 22:
-                                    password_score += 4;
-                                    $('.twenty_two_plus_length').show();
-                                    $('.six_plus_length').hide();
-                                    $('.ten_plus_length').hide();
-                                    $('.fourteen_plus_length').hide();
-                                    $('.eighteen_plus_length').hide();
-                                    $('.under_six_length').hide();
-                                    break;
-
-                            case len > 18:
-                                    password_score += 3;
-                                    $('.twenty_two_plus_length').hide();
-                                    $('.six_plus_length').hide();
-                                    $('.ten_plus_length').hide();
-                                    $('.fourteen_plus_length').hide();
-                                    $('.eighteen_plus_length').show();
-                                    $('.under_six_length').hide();
-                                    break;
-                            case len > 14:
-                                    password_score += 2;
-                                    $('.twenty_two_plus_length').hide();
-                                    $('.six_plus_length').hide();
-                                    $('.ten_plus_length').hide();
-                                    $('.fourteen_plus_length').hide();
-                                    $('.eighteen_plus_length').show();
-                                    $('.under_six_length').hide();
-                                    break;
-                            case len > 10:
-                                    password_score += 1;
-                                    $('.twenty_two_plus_length').hide();
-                                    $('.six_plus_length').hide();
-                                    $('.ten_plus_length').show();
-                                    $('.fourteen_plus_length').hide();
-                                    $('.eighteen_plus_length').hide();
-                                    $('.under_six_length').hide();
-                                    break;
-                            case len >= 6:
-                                    password_score -= 1;
-                                    $('.twenty_two_plus_length').hide();
-                                    $('.six_plus_length').show();
-                                    $('.ten_plus_length').hide();
-                                    $('.fourteen_plus_length').hide();
-                                    $('.eighteen_plus_length').hide();
-                                    $('.under_six_length').hide();
-                                    break;
-                            case len < 6:
-                                    password_score -= 2;
-                                    $('.twenty_two_plus_length').hide();
-                                    $('.six_plus_length').hide();
-                                    $('.ten_plus_length').hide();
-                                    $('.fourteen_plus_length').hide();
-                                    $('.eighteen_plus_length').hide();
-                                    $('.under_six_length').show();
-                                    break;
-                            default:
-                                 alert( "I don't know such values" );
-                        }
-
-
-
-                           debugger;
-                        switch (true) {
-                            case password_score >= 6:
-                                    strength = "Strong";
-                                    background_color = "label-success";
-                                    break;
-
-                            case password_score >= 3 && password_score <= 5:
-                                    strength = "Moderate";
-                                    background_color = "label-info";
-                                    break;
-
-                            case password_score >= 1 && password_score <= 2:
-                                      strength = "Weak";
-                                      background_color = "label-warning";
-                                    break;
-                            default:
-                                   strength = "Very Unsecure";
-                                   background_color = "label-danger";
-                        }
-
-
-                        $(".strength_result").html(strength);
-                        $('.strength_result').addClass(background_color);
-                    });
+                $(".strength_result").html(strength);
+                $('.strength_result').addClass(background_color);
+            });
 
 
 
 
 
-                    $("#btn_save").on('click', function () {
-                        debugger;
-                        var password_strength = $("#password_strength").val();
+            $("#btn_save").on('click', function () {
+                debugger;
+                var password_strength = $("#password_strength").val();
 
-                        if (password_strength == "" || password_strength == null) {
-                            alert("Password field is required");
-                        }
-                        else {
-                              var data = JSON.stringify({ generated_password: password_strength });
-                        debugger;
-                        $.ajax({
-                            type: "POST",
-                            url: "/PasswordStorage/GivenPassword",
-                            contentType: "application/json; charset=utf-8",
-                            datatType: "json",
-                            data: data,
-                            success: function (data) {
-                                 $("#generated_password").val(data.generated_password);
-                                  var url= '@Url.Action("Create","PasswordStorage")';
-                                  window.open(url, "_blank");
-                            },
-                            error: function (ex) {
-                                console.log(ex.error);
-                            },
-                            async: false
-                        });
-                        }
-
-                         })
-
-
-                            $("#btn_update").on('click', function () {
-                        debugger;
-                        var password_strength = $("#password_strength").val();
-
-                        if (password_strength == "" || password_strength == null) {
-                            alert("Pasword field is required");
-                        }
-                        else {
-                              var data = JSON.stringify({ generated_password: password_strength });
-                        debugger;
-                        $.ajax({
-                            type: "GET",
-                            url: "/PasswordStorage/Edit",
-                            contentType: "application/json; charset=utf-8",
-                            datatType: "json",
-                            data: data,
-                            success: function (data) {
-                                 $("#generated_password").val(data.generated_password);
-                                  var url= '@Url.Action("Create","PasswordStorage")';
-                                  window.open(url, "_blank");
-                            },
-                            error: function (ex) {
-                                console.log(ex.error);
-                            },
-                            async: false
-                        });
-                        }
-
-                            })
-
-
+                if (password_strength == "" || password_strength == null) {
+                    alert("Pasword field is required");
+                }
+                else {
+                      var data = JSON.stringify({ generated_password: password_strength });
+                debugger;
+                $.ajax({
+                    type: "POST",
+                    url: "/PasswordStorage/GivenPassword",
+                    contentType: "application/json; charset=utf-8",
+                    datatType: "json",
+                    data: data,
+                    success: function (data) {
+                         $("#generated_password").val(data.generated_password);
+                          var url= '@Url.Action("Create","PasswordStorage")';
+                          window.open(url, "_blank");
+                    },
+                    error: function (ex) {
+                        console.log(ex.error);
+                    },
+                    async: false
                 });
+                }
+
+                 })
 
 
+                    $("#btn_update").on('click', function () {
+                debugger;
+                var password_strength = $("#password_strength").val();
 
+                if (password_strength == "" || password_strength == null) {
+                    alert("Pasword field is required");
+                }
+                else {
+                      var data = JSON.stringify({ generated_password: password_strength });
+                debugger;
+                $.ajax({
+                    type: "GET",
+                    url: "/PasswordStorage/Edit",
+                    contentType: "application/json; charset=utf-8",
+                    datatType: "json",
+                    data: data,
+                    success: function (data) {
+                         $("#generated_password").val(data.generated_password);
+                          var url= '@Url.Action("Create","PasswordStorage")';
+                          window.open(url, "_blank");
+                    },
+                    error: function (ex) {
+                        console.log(ex.error);
+                    },
+                    async: false
+                });
+                }
+
+                    })
+
+
+        });
 
         
-            </script>
-        }
+    </script>
+}

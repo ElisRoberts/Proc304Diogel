@@ -42,15 +42,15 @@
                                         }
                                         else
                                         {
-                                            <input type="password" name="Password" value="@Session["generated_password"] " id="Password" />
+                                            <input type="password" name="Password" value="@Session["generated_password"] " id="Password" class="Password" />
 
                                         }
-                                        
+
                                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="showPass" />
-                                        <label for="showPass">Show Password</label>
-                                    </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="showPass" />
+                                            <label for="showPass">Show Password</label>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -81,8 +81,7 @@
                 changeYear: true,
                 dateFormat: 'mm/dd/yy'
                });
-
-        $(function() {
+                $(function() {
 
     $("#showPass").change(function() {
         var checked = $(this).is(":checked");           
@@ -95,7 +94,6 @@
 
 });
     </script>
-
 }
 
 

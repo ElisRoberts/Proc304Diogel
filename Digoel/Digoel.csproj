@@ -45,7 +45,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HaveIBeenPwned.Password, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Wndrr.HaveIBeenPwned.Password.1.1.0\lib\netstandard2.0\HaveIBeenPwned.Password.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=171a6ec5fa4b1644, processorArchitecture=MSIL">
+      <HintPath>packages\RecaptchaNet.2.1.0\lib\net451\Recaptcha.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -185,7 +191,57 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003031317193_InitialModel.cs" />
+    <Compile Include="Migrations\202003031317193_InitialModel.Designer.cs">
+      <DependentUpon>202003031317193_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031431476_ApplyAnnotationsToPasswordStorage.cs" />
+    <Compile Include="Migrations\202003031431476_ApplyAnnotationsToPasswordStorage.Designer.cs">
+      <DependentUpon>202003031431476_ApplyAnnotationsToPasswordStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031436276_ApplyAnnotationsToPasswordStorage1.cs" />
+    <Compile Include="Migrations\202003031436276_ApplyAnnotationsToPasswordStorage1.Designer.cs">
+      <DependentUpon>202003031436276_ApplyAnnotationsToPasswordStorage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031439124_ApplyAnnotationsToPasswordStorage2.cs" />
+    <Compile Include="Migrations\202003031439124_ApplyAnnotationsToPasswordStorage2.Designer.cs">
+      <DependentUpon>202003031439124_ApplyAnnotationsToPasswordStorage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003031440372_ApplyAnnotationsToPasswordStorageTest.cs" />
+    <Compile Include="Migrations\202003031440372_ApplyAnnotationsToPasswordStorageTest.Designer.cs">
+      <DependentUpon>202003031440372_ApplyAnnotationsToPasswordStorageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003210434129_password_storage_id_column_added_as_a_foreign_key_in_aspnetusers_table.cs" />
+    <Compile Include="Migrations\202003210434129_password_storage_id_column_added_as_a_foreign_key_in_aspnetusers_table.Designer.cs">
+      <DependentUpon>202003210434129_password_storage_id_column_added_as_a_foreign_key_in_aspnetusers_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003210546462_datataype_password_updated_for_password_storage_table.cs" />
+    <Compile Include="Migrations\202003210546462_datataype_password_updated_for_password_storage_table.Designer.cs">
+      <DependentUpon>202003210546462_datataype_password_updated_for_password_storage_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003210945088_password_required_nullable.cs" />
+    <Compile Include="Migrations\202003210945088_password_required_nullable.Designer.cs">
+      <DependentUpon>202003210945088_password_required_nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003211143096_user_id_added.cs" />
+    <Compile Include="Migrations\202003211143096_user_id_added.Designer.cs">
+      <DependentUpon>202003211143096_user_id_added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003211144441_user_id_added_requird.cs" />
+    <Compile Include="Migrations\202003211144441_user_id_added_requird.Designer.cs">
+      <DependentUpon>202003211144441_user_id_added_requird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003211157594_user_id_added_requird_removes.cs" />
+    <Compile Include="Migrations\202003211157594_user_id_added_requird_removes.Designer.cs">
+      <DependentUpon>202003211157594_user_id_added_requird_removes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003211204077_remove_PasswordStorage_Id_from_aspnetusers.cs" />
+    <Compile Include="Migrations\202003211204077_remove_PasswordStorage_Id_from_aspnetusers.Designer.cs">
+      <DependentUpon>202003211204077_remove_PasswordStorage_Id_from_aspnetusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CaptchaResponse.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PasswordGen.cs" />
@@ -205,6 +261,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="RecaptchaNet.Readme.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -213,7 +270,6 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.hibp.validate.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -253,11 +309,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Views\PasswordGen\" />
-    <Folder Include="Views\PasswordLeaked\" />
     <Content Include="Views\PasswordLeaked\LeakedView.cshtml" />
     <Content Include="Views\PasswordStorage\Create.cshtml" />
     <Content Include="Views\PasswordStorage\Delete.cshtml" />
@@ -283,6 +334,44 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202003031317193_InitialModel.resx">
+      <DependentUpon>202003031317193_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031431476_ApplyAnnotationsToPasswordStorage.resx">
+      <DependentUpon>202003031431476_ApplyAnnotationsToPasswordStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031436276_ApplyAnnotationsToPasswordStorage1.resx">
+      <DependentUpon>202003031436276_ApplyAnnotationsToPasswordStorage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031439124_ApplyAnnotationsToPasswordStorage2.resx">
+      <DependentUpon>202003031439124_ApplyAnnotationsToPasswordStorage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003031440372_ApplyAnnotationsToPasswordStorageTest.resx">
+      <DependentUpon>202003031440372_ApplyAnnotationsToPasswordStorageTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003210434129_password_storage_id_column_added_as_a_foreign_key_in_aspnetusers_table.resx">
+      <DependentUpon>202003210434129_password_storage_id_column_added_as_a_foreign_key_in_aspnetusers_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003210546462_datataype_password_updated_for_password_storage_table.resx">
+      <DependentUpon>202003210546462_datataype_password_updated_for_password_storage_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003210945088_password_required_nullable.resx">
+      <DependentUpon>202003210945088_password_required_nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003211143096_user_id_added.resx">
+      <DependentUpon>202003211143096_user_id_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003211144441_user_id_added_requird.resx">
+      <DependentUpon>202003211144441_user_id_added_requird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003211157594_user_id_added_requird_removes.resx">
+      <DependentUpon>202003211157594_user_id_added_requird_removes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003211204077_remove_PasswordStorage_Id_from_aspnetusers.resx">
+      <DependentUpon>202003211204077_remove_PasswordStorage_Id_from_aspnetusers.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

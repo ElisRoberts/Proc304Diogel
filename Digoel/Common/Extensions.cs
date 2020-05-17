@@ -7,6 +7,7 @@ namespace Digoel.Common
 {
     public static class Extensions
     {
+        //This class deals with gramatical options when generating passwords
         internal static string Remove(this string s, string pattern)
         {
             return s.Replace(pattern, "");

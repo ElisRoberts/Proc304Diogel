@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace Digoel.Controllers
 {
-   [Authorize]
+    [Authorize]
     public class StrengthCheckController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -26,7 +26,7 @@ namespace Digoel.Controllers
                           {
                               id = s.Id,
                               Password = s.Password,
-                            
+
                           }).AsEnumerable().Select(a => new PasswordStorage
                           {
                               Id = a.id,
@@ -52,7 +52,7 @@ namespace Digoel.Controllers
                 Session["Id"] = result_password.Id.ToString();
                 Session["result_password"] = result_password.Password.ToString();
             }
- 
+
 
             Session["Password"] = result.Password.ToString();
             return View();
@@ -63,12 +63,12 @@ namespace Digoel.Controllers
         {
             StrengthCheck temp = new StrengthCheck();
 
-          if (password_strength == null)
-                {
+            if (password_strength == null)
+            {
                 Response.Write("<script> alert ('Please enter a password');</script>");
             }
             var pwned = new HaveIBeenPwned.Password.HaveIBeenPwned();   //Searched database
-           
+
             bool isPasswordLeaked = pwned.IsPasswordPwned(password_strength);
 
             if (isPasswordLeaked == true)
@@ -81,14 +81,13 @@ namespace Digoel.Controllers
             }
             ViewBag.Return = temp.Leaked;
             return View("Index");
-
         }
-
 
         public ActionResult GetPassword(int? id)
         {
             return View();
         }
+
 
 
     }
